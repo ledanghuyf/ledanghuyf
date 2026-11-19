@@ -11,9 +11,21 @@ const url = 'https://api.open-meteo.com/v1/forecast?' + new URLSearchParams({
   hourly: 'temperature_2m,weather_code,is_day',
   daily: 'temperature_2m_max,temperature_2m_min',
 });
-const res = await fetch(url, { signal: AbortSignal.timeout(20000) });
-if (!res.ok) throw new Error(`Open-Meteo trả HTTP ${res.status}`);
-const d = await res.json();
+// Máy chủ GitHub Actions đôi khi kết nối chậm: thử lại tối đa 4 lần, cách nhau 5, 10, 15 giây
+async function getJSON() {
+  for (let i = 1; ; i++) {
+    try {
+      const res = await fetch(url, { signal: AbortSignal.timeout(25000) });
+      if (!res.ok) throw new Error(`Open-Meteo trả HTTP ${res.status}`);
+      return await res.json();
+    } catch (e) {
+      if (i >= 4) throw e;
+      console.warn(`Lần ${i} lỗi (${e.cause?.code ?? e.message}), thử lại...`);
+      await new Promise(r => setTimeout(r, i * 5000));
+    }
+  }
+}
+const d = await getJSON();
 const num = v => (typeof v === 'number' && Number.isFinite(v) ? v : null);
 const cur = d.current ?? {};
 const temp = num(cur.temperature_2m), code = num(cur.weather_code), isDay = cur.is_day === 1 || (cur.is_day === 0 ? false : null), cloudCover = num(cur.cloud_cover);

@@ -27,6 +27,8 @@ jobs:
           node-version: 22
 
       - name: Vẽ banner từ dữ liệu Open-Meteo
+        env:
+          NODE_OPTIONS: --dns-result-order=ipv4first
         run: mkdir -p dist && node tools/banner.mjs dist/banner.svg
 
       - uses: crazy-max/ghaction-github-pages@v4
