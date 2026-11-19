@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="64" viewBox="0 0 1200 64" role="img" aria-label="Đôi chút về mình">
+<defs><linearGradient id="ln" x1="0" x2="1"><stop offset="0" stop-color="#3b8fe6"/><stop offset="1" stop-color="#3b8fe6" stop-opacity="0"/></linearGradient></defs>
+<g transform="translate(22 32)"><circle r="9" fill="#ffc83d"/><g stroke="#ffc83d" stroke-width="2.4" stroke-linecap="round"><line x1="0" y1="-13" x2="0" y2="-17" transform="rotate(0)"/><line x1="0" y1="-13" x2="0" y2="-17" transform="rotate(45)"/><line x1="0" y1="-13" x2="0" y2="-17" transform="rotate(90)"/><line x1="0" y1="-13" x2="0" y2="-17" transform="rotate(135)"/><line x1="0" y1="-13" x2="0" y2="-17" transform="rotate(180)"/><line x1="0" y1="-13" x2="0" y2="-17" transform="rotate(225)"/><line x1="0" y1="-13" x2="0" y2="-17" transform="rotate(270)"/><line x1="0" y1="-13" x2="0" y2="-17" transform="rotate(315)"/></g></g>
+<text x="52" y="41" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#3b8fe6">Đôi chút về mình</text>
+<rect x="292" y="31" width="848" height="2" rx="1" fill="url(#ln)"/>
+</svg>

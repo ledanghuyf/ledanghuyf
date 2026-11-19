@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="64" viewBox="0 0 1200 64" role="img" aria-label="Hoạt động trên GitHub">
+<defs><linearGradient id="ln" x1="0" x2="1"><stop offset="0" stop-color="#3b8fe6"/><stop offset="1" stop-color="#3b8fe6" stop-opacity="0"/></linearGradient></defs>
+<g transform="translate(22 32)"><g transform="translate(-16 -15) scale(.24)"><g transform="scale(1)" opacity="1"><path d="M25 60 a25 25 0 0 1 8-48 a32 32 0 0 1 60-6 a26 26 0 0 1 38 22 a20 20 0 0 1-6 32 z" fill="#8fc6ff"/></g></g><g stroke="#3b8fe6" stroke-width="2.4" stroke-linecap="round"><line x1="-8" y1="6" x2="-10" y2="12"/><line x1="0" y1="6" x2="-2" y2="12"/><line x1="8" y1="6" x2="6" y2="12"/></g></g>
+<text x="52" y="41" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#3b8fe6">Hoạt động trên GitHub</text>
+<rect x="364.5" y="31" width="775.5" height="2" rx="1" fill="url(#ln)"/>
+</svg>
