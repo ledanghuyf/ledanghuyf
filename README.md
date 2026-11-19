@@ -1,8 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/header-light.svg" />
-  <img src="./assets/header-light.svg" width="100%" alt="Lê Đăng Huy, Web Developer, sinh viên Công nghệ Thông tin, Đại học Trà Vinh. Bầu trời Vĩnh Long với cầu Mỹ Thuận." />
-</picture>
+<a href="https://github.com/ledanghuyf"><img src="https://raw.githubusercontent.com/ledanghuyf/ledanghuyf/weather/banner.svg" width="100%" alt="Lê Đăng Huy, Web Developer, sinh viên Công nghệ Thông tin, Đại học Trà Vinh. Bầu trời Vĩnh Long đổi theo thời tiết thật, cập nhật mỗi giờ." /></a>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Be+Vietnam+Pro&weight=500&size=20&duration=3200&pause=900&color=3B8FE6&center=true&vCenter=true&width=640&lines=Ch%C3%A0o+b%E1%BA%A1n%2C+m%C3%ACnh+l%C3%A0+Huy+%F0%9F%91%8B;M%C3%ACnh+th%C3%ADch+l%C3%A0m+web+v%E1%BB%9Bi+HTML%2C+CSS%2C+JavaScript;Lu%C3%B4n+t%C3%ACm+t%C3%B2i+c%C3%A1ch+l%C3%A0m+trang+web+g%E1%BB%8Dn+v%C3%A0+d%E1%BB%85+d%C3%B9ng" alt="Chào bạn, mình là Huy. Mình thích làm web với HTML, CSS, JavaScript." />

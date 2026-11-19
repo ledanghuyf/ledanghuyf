@@ -1,0 +1,37 @@
+name: Cập nhật banner theo thời tiết Vĩnh Long
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["tools/banner.mjs", ".github/workflows/weather.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weather-banner
+  cancel-in-progress: true
+
+jobs:
+  banner:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Vẽ banner từ dữ liệu Open-Meteo
+        run: mkdir -p dist && node tools/banner.mjs dist/banner.svg
+
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: weather
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
